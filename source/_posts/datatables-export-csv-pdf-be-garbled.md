@@ -21,7 +21,7 @@ auto_bom = function(blob) {
 ```
 ## PDF乱码解决方法
 因为DataTables调用的是**pdfMake**进行导出PDF，而pdfMake自带的字体无法支持中文，需要我们自己生成`vfs_fonts.js`进行替换，步骤如下：
-### 1、安装Grunt及模块
+### 安装Grunt及模块
 首先运行如下命令：
 ```javascripyt
 npm install -g grunt-cli
@@ -35,7 +35,7 @@ npm install grunt --save-dev
 npm install grunt-dump-dir --save-dev
 ```
 建议使用淘宝的`cnpm`速度会快很多。
-### 2、编译自定义vfs_fonts.js文件
+### 编译自定义vfs_fonts.js文件
 将下载的ttf字体文件放到项目`examples\fonts`目录下，在pdfMake根目录下运行如下命令：
 ```javascript
 grunt dump_dir
@@ -46,7 +46,7 @@ grunt dump_dir
 >Done, without errors.
 
 现在可以将**build/vfs_fonts.js**文件引到自己的项目中来，再进行注册自定义字体的设置。
-### 3、在项目中注册自定义字体
+### 在项目中注册自定义字体
 这里需要对`pdfMake.fonts`进行注册自己的自定义字体，在页面头部进行`javascript`载入初始化
 ```javascript
 	pdfMake.fonts  = {
@@ -56,18 +56,18 @@ grunt dump_dir
 	};
 ```
 **msyh**是我自定义的字体名称，使用的是微软雅黑字体，在你的`docDefinition`中将默认字体设置成你前面向pdfMake注册过的字体就可以了。
- ```javascript	
+```javascript	
  	var docDefinition = {
   	 content: '测试pdfMake中文导出乱码', 
   	 defaultStyle: {
     		font: 'msyh'
   		}
-  	};
+};
  ```
- 附件是我使用的pdfMake和DataTables还有我使用微软雅黑编译的vfs_fonts.js文件。
- [pdfMake][pdfMake]
- [DataTables-1.10.8][DataTables-1.10.8]
- [vfs_fonts.js][vfs_fonts]
- [pdfMake]:http://static.yuyanping.com/pdfmake-master.zip "pdfMake"
- [DataTables-1.10.8]:http://static.yuyanping.com/DataTables-1.10.8.zip "DataTables-1.10.8"
- [vfs_fonts]:http://static.yuyanping.com/vfs_fonts.js "vfs_fonts"
+附件是我使用的pdfMake和DataTables还有我使用微软雅黑编译的vfs_fonts.js文件。
+[pdfMake][pdfMake]
+[DataTables-1.10.8][DataTables-1.10.8]
+[vfs_fonts.js][vfs_fonts]
+[pdfMake]:http://static.yuyanping.com/pdfmake-master.zip "pdfMake"
+[DataTables-1.10.8]:http://static.yuyanping.com/DataTables-1.10.8.zip "DataTables-1.10.8"
+[vfs_fonts]:http://static.yuyanping.com/vfs_fonts.js "vfs_fonts"
