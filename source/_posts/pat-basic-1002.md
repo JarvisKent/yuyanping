@@ -1,5 +1,5 @@
 title: PAT-Basic-1002 写出这个数
-date: 2015-11-13 14:31:04
+date: 2015-11-15 07:31:04
 tags: [PAT,PAT Basic]
 categories: [算法]
 toc: false

@@ -1,5 +1,5 @@
 title: PAT-Basic-1001 害死人不偿命的(3n+1)猜想
-date: 2015-11-13 14:31:04
+date: 2015-11-15 07:21:04
 tags: [PAT,PAT Basic]
 categories: [算法]
 toc: false

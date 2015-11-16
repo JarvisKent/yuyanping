@@ -3,7 +3,7 @@ date: 2015/11/13 12:00:00
 tags: [Hexo,Node.js,Git]
 categories: [Web前端]
 ---
-这是用 `hexo` 搭建后的第一篇文章，昨天捣腾了一下午，读了很多前辈们写的教程，很多不适合现在，最新版本的hexo，有的又写的太杂乱，最后还是官方文档写的比较容易懂，这里作一个简单的记录。在我写这篇文章的时候，使用的是Hexo **3.0** ,hexo-cli **0.1.9** 的版本。
+这是用 `hexo` 搭建博客后的第一篇文章，读了很多前辈们写的教程，很多不适合，现在最新版本的hexo，有的又写的太杂乱，最后还是官方文档写的比较容易懂，这里作一个简单的记录。在我写这篇文章的时候，使用的是Hexo **3.0** ,hexo-cli **0.1.9** 的版本。
 
 ## 开始使用hexo
 关于[hexo](https://hexo.io/zh-cn/docs/index.html 'hexo intrduction')的介绍这里就不多说，可以到官网看看写的很清楚，这里只简单说明下在使用过程中需要注意的事，还有一些坑。
@@ -16,17 +16,17 @@ categories: [Web前端]
 需要注意的是，Node.js不要安装 **Latest Features** 有时候会出问题，还是安装 **Mature and Dependable** 版本的比较稳定。😍
 
 ### 安装hexo-cli
-安装完前面的2个软件之后，需要安装一个全局的 **hexo-cli** 运行如下命令在控制台
+安装完前面的2个软件之后，需要安装一个全局的 **hexo-cli** 运行如下命令在控制台(Dos of Windows)
 ```javascript
 npm install -g hexo-cli
 ```
 这里注意最好别用 `cnpm`命令来装，可能会存在问题，也是一个坑。
 ### 创建一个hexo项目
-刚才对 hexo-cli 模块进行全局安装，现在来建立第一个 hexo 项目，使用如下命令
+现在来建立第一个 hexo 项目，使用如下命令
 ```javascript
 hexo init <项目名称>
 ```
-运行上面的命令会建立一个文件夹，进入 **项目根目录** 运行如下命令来安装 Hexo 所依赖的模块
+运行上面的命令会建立一个项目文件夹，进入 **项目根目录** 运行如下命令来安装 Hexo 所依赖的模块
 ```javascript
 npm install 
  ```
@@ -50,15 +50,15 @@ deploy:
   repository: https://github.com/HelloYu/helloyu.github.io.git [改成你自己的仓库]
   branch: master   
 ```
-要注意 `yml` 语法中 `:` 后面是有 **空格** 的，没有空格会出错。保存以后运行如下命令来测试看看
+要注意 `YAML` 语法中 `:` 后面是有 **空格** 的，没有空格会出错。保存以后运行如下命令来测试看看
 ```javascript
 hexo d -g   
 ```
 如果不出问题，就会同步到你的仓库，以后写完文章只要运行上面的命令就可以。就这么简单！😈
 
 ### 添加评论插件
-插件我看了多玩，最后还是决定用 [Disqus](https://disqus.com/)，因为多玩不知道为什么，我的名字一直显示有问题，改不了，也许是他们缓存没有刷新，注册后配置下 **_config.yml** 就可以。
-登录到 disqus 界面，在右上角的 **settings** 里面，有一项 **Add Disqus to Site** 跟着步骤做就可以
+插件我看了多玩，最后还是决定用  **Disqus**，因为多玩不知道为什么，我的名字一直显示有问题，改不了，也许是他们缓存没有刷新，注册后配置下 **_config.yml** 就可以。
+登录到[Disqus](https://disqus.com/) 界面，在右上角的 **settings** 里面，有一项 **Add Disqus to Site** 跟着步骤做就可以
 ```javascript
 disqus_shortname: [你的shortname]   
 ```

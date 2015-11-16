@@ -47,7 +47,7 @@ open_in_new: false
 
 # Miscellaneous
 #google_analytics: ''
-favicon: /favicon.ico
+favicon: /img/favicon.ico
 
 #你的头像url
 avatar: /img/avatar.png
