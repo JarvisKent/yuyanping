@@ -6,6 +6,7 @@ categories: [Web前端]
 在使用DataTables(V1.10.8 [2015-8-28])导出`CSV`、`PDF`文件时，中文会显示乱码，CSV需要对头部编码进行设置，PDF导出乱码是因为默认的字体不支持中文，我们需要替换字体
 ## CSV乱码解决方法
 编辑DataTables源码文件`buttons.html5.js`找到如下代码段进行替换：
+<!--more-->
 ```javascript
 auto_bom = function(blob) {
 	// prepend BOM for UTF-8 XML and text/* types (including HTML)
@@ -68,6 +69,6 @@ grunt dump_dir
 [pdfMake][pdfMake]
 [DataTables-1.10.8][DataTables-1.10.8]
 [vfs_fonts.js][vfs_fonts]
-[pdfMake]:http://static.yuyanping.com/pdfmake-master.zip "pdfMake"
-[DataTables-1.10.8]:http://static.yuyanping.com/DataTables-1.10.8.zip "DataTables-1.10.8"
-[vfs_fonts]:http://static.yuyanping.com/vfs_fonts.js "vfs_fonts"
+[pdfMake]:http://7xoed1.com1.z0.glb.clouddn.com/2015/pdfmake-master.zip "pdfMake"
+[DataTables-1.10.8]:http://7xoed1.com1.z0.glb.clouddn.com/2015/DataTables-1.10.8.zip "DataTables-1.10.8"
+[vfs_fonts]:http://7xoed1.com1.z0.glb.clouddn.com/2015/vfs_fonts.js "vfs_fonts"
