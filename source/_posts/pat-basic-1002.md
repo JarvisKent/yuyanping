@@ -13,7 +13,7 @@ toc: false
 输入样例：
 1234567890987654321123456789
 输出样例：
-yi san wu
+<!--more-->yi san wu
 ```c
 #include <stdio.h>
 #include <stdlib.h>

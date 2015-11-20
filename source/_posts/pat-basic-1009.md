@@ -11,7 +11,7 @@ toc: false
 输出格式：每个测试用例的输出占一行，输出倒序后的句子。
 
 输入样例：
-Hello World Here I Come
+Hello <!--more-->World Here I Come
 输出样例：
 Come I Here World Hello
 ## 解题思路

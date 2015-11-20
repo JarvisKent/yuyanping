@@ -8,7 +8,7 @@ Given a non-negative integer N, your task is to compute the sum of all the digit
 
 Input Specification:
 
-Each input file contains one test case. Each case occupies one line which contains an N (<= 10100).
+Each inpu<!--more-->t file contains one test case. Each case occupies one line which contains an N (<= 10100).
 
 Output Specification:
 

@@ -4,7 +4,7 @@ tags: [PAT,PAT Advanced]
 categories: [算法]
 toc: false
 ---
-A reversible prime in any number system is a prime whose "reverse" in that number system is also a prime. For example in the decimal system 73 is a reversible prime because its reverse 37 is also a prime.
+A reversible prime in any number system is a prime whose "reverse" in that number system is also a prime. For example in the decimal system 73 is a reversible prime bec<!--more-->ause its reverse 37 is also a prime.
 
 Now given any two positive integers N (< 105) and D (1 < D <= 10), you are supposed to tell if N is a reversible prime with radix D.
 

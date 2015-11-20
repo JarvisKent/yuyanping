@@ -4,7 +4,7 @@ tags: [PAT,PAT Advanced]
 categories: [算法]
 toc: false
 ---
-At the beginning of every day, the first person who signs in the computer room will unlock the door, and the last one who signs out will lock the door. Given the records of signing in's and out's, you are supposed to find the ones who have unlocked and locked the door on that day.
+At the beginning of every day, the first person who signs in the computer room will unlock the door, and the last one who signs out will lock the door. Given the re<!--more-->cords of signing in's and out's, you are supposed to find the ones who have unlocked and locked the door on that day.
 
 Input Specification:
 
