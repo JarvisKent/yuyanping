@@ -1,5 +1,5 @@
 {
-    "src":          "C:/Users/Jeffrey/Desktop/blog/yuyanping/source/static",
+    "src":          "C:/Users/Jeffrey/Desktop/blog/yuyanping/static",
     "dest":         "qiniu:access_key=zmTRlsz8byRhFd9crnY_WzlqjMt4VMNZ4H_ci8G5&secret_key=QKXiNq_kIR3mrXeoe2hsewxuczoNSBx3rVLYnT_P&bucket=yuyanping",
     "debug_level":  1
 }
