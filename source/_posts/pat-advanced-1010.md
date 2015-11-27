@@ -6,7 +6,7 @@ toc: false
 ---
 Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is "yes", if 6 is a decimal number and 110 is a binary number.
 
-Now for any pair of positive integers N1 and N2, your task is to find the radix of one number while that of the other is given.
+Now for a<!--more-->ny pair of positive integers N1 and N2, your task is to find the radix of one number while that of the other is given.
 
 Input Specification:
 

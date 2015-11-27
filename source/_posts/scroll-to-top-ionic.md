@@ -4,7 +4,7 @@ tags: [Ionic]
 categories: [Web前端]
 ---
 最近在用 ionic 做的一个项目，当用户数据太多的时候，如果要往上拉就挺麻烦的，我就想能不能在手机上也能实现在网页中的回到顶部的效果呢？毕竟 ionic 是基于 jQuery 的框架，要是 jQuery能做的，用到 ionic 中应该也是没有问题的，下面是实现以后的动态效果图：
-![scroll-to-top](http://static.yuyanping.com/wp-content/uploads/2015/07/back-to-top_thumb.gif)
+![scroll-to-top](http://7xoed1.com1.z0.glb.clouddn.com/2015/back-to-top.gif "返回顶部演示")
 要实现这个功能也不是挺难的，需要使用到 Ionic 的  $ionicScrollDelegate API ，下面是一些实现代码和步骤：
 
 ## 步骤

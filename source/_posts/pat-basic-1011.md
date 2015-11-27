@@ -12,7 +12,7 @@ toc: false
 
 输出格式：
 
-对每组测试用例，在一行中输出“Case #X: true”如果A+B>C，否则输出“Case #X: false”，其中X是测试用例的编号（从1开始）。
+对每组测试用例，在一行中输出“Case #X: true”如果A+B>C，否则输出“Case #X: false”，<!--more-->其中X是测试用例的编号（从1开始）。
 
 输入样例：
 4

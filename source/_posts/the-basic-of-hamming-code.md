@@ -11,8 +11,8 @@ categories: [算法]
 
 先来看一张图，在信息位为4位，海明码3位的时候，每位校验位能覆盖的范围。
 海明码简单分析
-
-![Hamming74](http://static.yuyanping.com/wp-content/uploads/2015/05/160px-Hamming74.svg_.png)
+<!--more-->
+![Hamming74](http://7xoed1.com1.z0.glb.clouddn.com/2015/Hamming74.png "海明码校验范围")
 The Hamming(7,4)-code (with r=3)
 
 上面的内容只是热身，下面是如何计算海明码，很简单，跟我一起学习！

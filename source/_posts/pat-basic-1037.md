@@ -8,7 +8,7 @@ toc: false
 
 输入格式：
 
-输入在1行中分别给出P和A，格式为“Galleon.Sickle.Knut”，其间用1个空格分隔。这里Galleon是[0, 107]区间内的整数，Sickle是[0, 17)区间内的整数，Knut是[0, 29)区间内的整数。
+输入在1行中分别给出P和A，格式为“Galleon.Sickle<!--more-->.Knut”，其间用1个空格分隔。这里Galleon是[0, 107]区间内的整数，Sickle是[0, 17)区间内的整数，Knut是[0, 29)区间内的整数。
 
 输出格式：
 

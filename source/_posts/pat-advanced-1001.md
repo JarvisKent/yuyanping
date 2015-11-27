@@ -9,7 +9,7 @@ Calculate a + b and output the sum in standard format -- that is, the digits mus
 Input
 
 Each input file contains one test case. Each case contains a pair of integers a and b where -1000000 <= a, b <= 1000000. The numbers are separated by a space.
-
+<!--more-->
 Output
 
 For each test case, you should output the sum of a and b in one line. The sum must be written in the standard format.
