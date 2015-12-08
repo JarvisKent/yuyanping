@@ -1,5 +1,4 @@
 title: 餐饮订单管理系统——初始化项目
-date: 2015-12-08 19:36:31
 tags: [AngularJS,Node.js]
 categories: Web前端
 ---
