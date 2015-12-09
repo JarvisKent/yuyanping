@@ -1,4 +1,4 @@
-title: 《Maintainable JavaScript》笔记之基本格式
+title: 《Maintainable JavaScript》基本格式
 date: 2015/12/02 12:00:00
 tags: [JavaScript]
 categories: [Web前端]
