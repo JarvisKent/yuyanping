@@ -13,11 +13,31 @@ categories: Web前端
   - `app` 存放顶层angular文件。
  + `test` 存放测试文件。
 
-根目录下通过server.js来启动
-我使用[express][express-url]来初始化我的项目基本结构，简单说明下步骤。
-## 安装 express 
+创建好上面的目录之后，先构建一个简单的服务器进行测试。
+<!--more-->
+## 搭建服务端
+使用[express][express-url]来创建服务器。
+### 安装 express 
+根目录下创建 **server.js** 文件，之后运行如下命令来安装 express 模块：
 ```javascript
 npm install express --save
 ```
 写这篇文章的时候 express 版本为 4.13.1
+### 测试服务器
+我需要向客户端返回一个index.html页面，所以我首先在 **www** 目录下创建一个index.html的页面。之后将如下代码放入 **server.js** 文件，并使用 Node 运行测试。
+```javascript
+var express = require('express');
+var app = express();
+var fs = require('fs');
+app.get('/', function (req, res) {
+	var html = fs.createReadStream('./www/index.html');
+	html.pipe(res);
+}).listen(3000);
+```
+现在访问下本地 **localhost:3000** 如果成功将会返回index.html中的信息。
+## 总结
+我相信从简单的开始，一步一步的去实现一个项目，对于我的成长是很有帮助的。这只是我正式步入 Node 的第一步，下面需要做的事还有很多，比如说：需求分析，概要设计，详细设计等，这些内容可能放在项目[Wiki][Restaurant-ordering-sytem-wiki]里面比较合适。
+
+
 [express-url]:http://expressjs.com/en/index.html "express"
+[Restaurant-ordering-sytem-wiki]:https://github.com/HelloYu/Restaurant-Ordering-System/wiki "github wiki"
