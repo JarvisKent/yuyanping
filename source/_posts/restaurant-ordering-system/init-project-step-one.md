@@ -18,13 +18,12 @@ categories: Web前端
 ## 搭建服务端
 使用[express][express-url]来创建服务器。
 ### 安装 express 
-根目录下创建 **server.js** 文件，之后运行如下命令来安装 express 模块：
 ```javascript
 npm install express --save
 ```
 写这篇文章的时候 express 版本为 4.13.1
 ### 测试服务器
-我需要向客户端返回一个index.html页面，所以我首先在 **www** 目录下创建一个index.html的页面。之后将如下代码放入 **server.js** 文件，并使用 Node 运行测试。
+在根目录下创建 **app.js** 文件，把下面的代码拷贝进去 。
 ```javascript
 var express = require('express');
 var app = express();
@@ -34,7 +33,8 @@ app.get('/', function (req, res) {
 	html.pipe(res);
 }).listen(3000);
 ```
-现在访问下本地 **localhost:3000** 如果成功将会返回index.html中的信息。
+先使用一个简单的index.html页面作为根目录`/`请求的返回信息，在 **www** 目录下创建一个index.html的页面。使用 Node 测试下服务器是否运行正常。
+访问本地 **localhost:3000** 如果成功将会返回index.html中的信息。
 ## 总结
 我相信从简单的开始，一步一步的去实现一个项目，对于我的成长是很有帮助的。这只是我正式步入 Node 的第一步，下面需要做的事还有很多。
 ### 项目文档
