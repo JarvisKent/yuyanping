@@ -36,7 +36,10 @@ app.get('/', function (req, res) {
 ```
 现在访问下本地 **localhost:3000** 如果成功将会返回index.html中的信息。
 ## 总结
-我相信从简单的开始，一步一步的去实现一个项目，对于我的成长是很有帮助的。这只是我正式步入 Node 的第一步，下面需要做的事还有很多，比如说：需求分析，概要设计，详细设计等，这些内容可能放在项目[Wiki][Restaurant-ordering-sytem-wiki]里面比较合适。
+我相信从简单的开始，一步一步的去实现一个项目，对于我的成长是很有帮助的。这只是我正式步入 Node 的第一步，下面需要做的事还有很多。
+### 项目文档
+需求分析，概要设计，详细设计等，这些内容放在项目[Wiki][Restaurant-ordering-sytem-wiki]里面比较合适。
+
 
 
 [express-url]:http://expressjs.com/en/index.html "express"
