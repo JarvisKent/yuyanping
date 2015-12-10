@@ -1,6 +1,6 @@
 title: 餐饮管理系统——初始化项目
-tags: [AngularJS,Node.js]
-categories: Web前端
+tags: [AngularJS,Node.js,餐饮管理系统]
+categories: [Web前端]
 ---
 这是第一篇文章，记录项目的初始化和整个项目结构的简单说明，我希望借这个项目学习`Node`的有关知识，顺便记录下来，也希望给需要的人一些帮助，有错误和建议请留言。
 ## 创建目录结构
