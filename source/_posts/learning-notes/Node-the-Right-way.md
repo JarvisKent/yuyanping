@@ -16,6 +16,7 @@ const
 	}); 
 	server.listen(5432);
 ```
+<!--more-->
 If you want net module to use Unix sockets,you may change the listen section to this:
 ```javascript
 server.listen('/tmp/watcher.sock', function() { 
