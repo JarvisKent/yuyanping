@@ -60,13 +60,13 @@ app.get('/api/:name', function(req, res) {
 app.listen(3000, function(){ 
 	console.log("ready captain."); 
 });
-In addition to get(), Express has put(), post(), and del() to register handlers for PUT, POST, and DELETE requests, respectively. 
 ```
+In addition to get(), Express has put(), post(), and del() to register handlers for PUT, POST, and DELETE requests, respectively. 
 ### Serving Static Content with Express
 ```javascript
 app.use(express.static(__dirname + '/static')); 
 app.use(express.static(__dirname + '/bower_components'));
 ```
-These two lines tell Express to serve static content out of the static/ and bower_components/ directories of the project. This means that if Express can’t find a particular route, it’ll fall back to serving the static content, checking these directories one at a time. 
-For instance, the project’s static/ directory contains three files: index.html, app.css, and app.js. These contain the HTML, CSS, and client-side JavaScript for the b4 application, respectively. 
-With the server running, when you request http://localhost:3000/index.html, Express will serve up static/index.html because we don’t have an explicit route for it.
+These two lines tell Express to serve static content out of the static/ and bower_components/ directories of the project. This means that if Express can not find a particular route, it will fall back to serving the static content, checking these directories one at a time. 
+For instance, the project static/ directory contains three files: index.html, app.css, and app.js. These contain the HTML, CSS, and client-side JavaScript for the b4 application, respectively. 
+With the server running, when you request http://localhost:3000/index.html, Express will serve up static/index.html because we do not have an explicit route for it.
