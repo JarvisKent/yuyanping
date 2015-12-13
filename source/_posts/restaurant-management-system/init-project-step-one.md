@@ -11,7 +11,8 @@ categories: [Web前端]
   - `res` 资源文件。
   - `views` 存放html和angular的一些js文件。
   - `app` 存放顶层angular文件。
- + `test` 存放测试文件。
+ + `spec` 存放测试文件。
+ + `diagrams` 存放项目绘图源码。
 
 创建好上面的目录之后，先构建一个简单的服务器进行测试。
 <!--more-->
