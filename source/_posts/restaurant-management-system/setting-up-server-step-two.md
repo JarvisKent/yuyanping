@@ -10,6 +10,7 @@ categories: [Web前端]
  - **models** 存放数据库模型。  
  - **routes** 路由文件。  
 
+<!--more-->
 之后修改下`app.js`文件如下：
 ```javascript
 var express = require('express'),
