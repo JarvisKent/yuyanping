@@ -1,7 +1,7 @@
 title: Git pull request
 date: 2015/12/13 14:30:00
 tags: [Git]
-categories: [学习分享]
+categories: [Web前端]
 ---
 需要进行团队协作开发，将对 Git 的 `pull request`功能进行学习和记录分享。
 ## Fork and Clone

@@ -1,4 +1,5 @@
 title: 餐饮管理系统——初始化项目
+date: 2015/12/3 12:00:00
 tags: [AngularJS,Node.js,餐饮管理系统]
 categories: [Web前端]
 ---
@@ -40,8 +41,7 @@ app.get('/', function (req, res) {
 我相信从简单的开始，一步一步的去实现一个项目，对于我的成长是很有帮助的。这只是我正式步入 Node 的第一步，下面需要做的事还有很多。
 ### 项目文档
 需求分析，概要设计，详细设计等，这些内容放在项目[Wiki][Restaurant-ordering-sytem-wiki]里面比较合适。
-
-
-
+### 备注
+相关版本信息，在Wiki的服务器版本记录里面能找到。
 [express-url]:http://expressjs.com/en/index.html "express"
 [Restaurant-ordering-sytem-wiki]:https://github.com/HelloYu/Restaurant-Ordering-System/wiki "github wiki"
