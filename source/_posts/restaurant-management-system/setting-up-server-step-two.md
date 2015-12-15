@@ -3,7 +3,7 @@ date: 2015/12/14 12:00:00
 tags: [AngularJS,Node.js,餐饮管理系统]
 categories: [Web前端]
 ---
-前面已经简单构建了一个服务器，并能访问，现在要在此基础上进行完善。
+在[初始化项目](http://www.yuyanping.com/restaurant-management-system/init-project-step-one/)中，已经简单构建了一个服务器，并能访问，现在要在此基础上进行完善。
 首先完善下服务器端的目录结构，在server内添加如下文件：
  
  - **controllers** 存放逻辑处理文件。
@@ -100,3 +100,5 @@ module.exports.login = function(userLogin) {
  app.use(bodyParser.urlencoded({extend:true}));
  ```
  依然没有效果。
+ ### 2015-12-15
+ 关于form-data无法解析，是因为body-parser不支持的原因，他们两个主要区别在于，form-data(multipart/form-data),是表单进行文件传输时使用的格式(暂时只知道这么多)，而x-www-form-urlencoded，是将表单数据转化为**键/值**对传输(理解正确么？)。
