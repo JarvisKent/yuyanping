@@ -7,7 +7,7 @@ title: 余延平的记事本
 subtitle: TO BE OR NOT TO BE
 description: 与世界分享我的知识、经验和见解。
 author: Jeffrey Yu
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: yelee
+theme: zero
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -82,3 +82,9 @@ sitemap:
     path: sitemap.xml
 
 disqus_shortname: yuyanping
+
+# Swiftype Search Key
+swiftype_key: HP2B6hbVhWQ7sfYU4Lfr
+
+social:
+  github: https://github.com/HelloYu
