@@ -92,3 +92,9 @@ social:
   twitter: https://twitter.com/jeffrey_colbert
 
 avatar: /images/avatar.png
+
+# title, chinese available
+links_title: Links
+# links
+links:
+  JarvisKent: http://huangzihao.me/
