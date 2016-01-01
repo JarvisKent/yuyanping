@@ -7,6 +7,7 @@ categories: [Web前端]
 ## 下载安装MongoDB
 到[MongoDB][MongoDB_download]官网下载，使用的windows 64bit系统，就下载64位的，其中有**legacy**版本，下面是官网的解释，我win8的系统就装**Windows 64-bit 2008 R2+**的就行。
 >MongoDB for Windows 64-bit Legacy runs on Windows Vista, Windows Server 2003, and Windows Server 2008 and does not include recent performance enhancements.
+
 <!--more-->
 ### 配置基础环境
 下载安装完成之后，需要做的是，在**C盘**根目录下,创建一个数据库文件夹，`\data\db`，注意，这是2个文件夹。
