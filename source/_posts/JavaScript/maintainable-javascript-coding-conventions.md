@@ -13,6 +13,7 @@ if (true) {
 ```
 <!--more-->
 **Douglas Crockford**大神喜欢用4个空格(space)其实我比较喜欢1个tab，个人喜好吧，也看自己团队的风格。只要不混用就行。当然tab可能在不同的编辑器会有不同的缩进效果，如果都是统一tab我想问题不大。
+**注：**因为GitHub上面用tab表现的效果不太好，现在开始统一使用2个space。2016-1-1
 ## 一行长度(Line Length)
 ```javascript
 // Good 
