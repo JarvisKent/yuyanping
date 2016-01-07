@@ -3,7 +3,6 @@ tags: [SICP,Lisp]
 categories: [计算机科学]
 date: 2016-01-02 11:58:07
 ---
-限于英文水平，可能有概念性的错误，或者文字性错误，还请纠正指出，感谢。
 ## 抽象
 开头，借用John Locke(1690)的文章，来谈人的思维活动，是怎么对事物进行抽象的，其中说到三点：
 
@@ -188,11 +187,11 @@ Guess     Quotient      Average
         (sqrt-iter (improve guess))))
   (sqrt-iter 1.0))
 ```
-这样就封装成一个块，可以像函数一样来调用了。这是第一章，[抽象过程][Chapter-1]中第一节的学习笔记，后续的笔记将以链接的形式出现在后面。
-
+这样就封装成一个块，可以像函数一样来调用了。这是第一章抽象过程，中第一节[程序设计基本元素][Chapter-1-1]的学习笔记，后续的笔记将以链接的形式出现在后面。
+限于英文水平，可能有概念性的错误，或者文字性错误，还请纠正指出，感谢。
 ## 备注
 
  - **REPL** is short for read-eval-print loop,这其实是一个很好理解的概念，输入，计算，输出。这就是命令控制台一直在做的事。
  - **Scheme** dialect of Lisp
 
-[Chapter-1]:http://sarabander.github.io/sicp/html/Chapter-1.xhtml#Chapter-1
+[Chapter-1-1]: http://sarabander.github.io/sicp/html/1_002e1.xhtml#g_t1_002e1
