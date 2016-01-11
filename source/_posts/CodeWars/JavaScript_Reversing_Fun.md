@@ -3,7 +3,7 @@ tags: [JavaScript,CodeWars]
 categories: [Coding Fun]
 date: 2016-01-07 18:58:07
 ---
-## Question
+## Quiz
 
 You are going to be given a string. Your job is to return that string in a certain order that I will explain below:
 

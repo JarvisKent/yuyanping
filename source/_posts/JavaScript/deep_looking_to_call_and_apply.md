@@ -6,7 +6,7 @@ categories: [Web前端]
 MDN上对`call`和`apply`的区别如下：
 >Note: While the syntax of this function is almost identical to that of call(), the fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
 
-这2个东东只有参数的不同，作用都是绑定，执行的上下文环境。来简单做一个题，将数组展开：
+这2个东东基本是一个作用，都是绑定this的，执行上下文环境，最大区别是参数的不同。来简单做一个题，将数组展开：
 ```javascript
 [[1,2,3],["a","b","c"],[1,2,3]] => [1,2,3,"a","b","c",1,2,3]
 ```
