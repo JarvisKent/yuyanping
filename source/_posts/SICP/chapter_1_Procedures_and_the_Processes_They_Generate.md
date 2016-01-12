@@ -1,10 +1,10 @@
 title: Procedures and the Processes They Generate
-tags: [SICP,Lisp]
+tags: [SICP]
 categories: [计算机科学]
 date: 2016-01-11 11:58:07
 ---
 ## 预见性
-开头,文章用棋手的例子来说明，一个专业棋手(expert)和业余的区别，专业棋手，能预见(visualize)这一步棋可能产生的影响。所以预见处理过程(processes)会产生的结果，是通往计算机科学必修之课。
+开头，文章用棋手的例子来说明，一个专业棋手(expert)和业余的区别，专业棋手，能预见(visualize)这一步棋可能产生的影响。所以预见处理过程(processes)会产生的结果，是通往计算机科学必修之课。
 ## 线性递归和迭代
 解决`n!`的方法有很多种，一种是通过观察得出，n可以由n-1计算得到，有如下代码：
 ```javascript
@@ -85,4 +85,3 @@ GCD(a,b) = GCD(b,r)
       a
       (gcd b (remainder a b))))
 ```
-
