@@ -4,7 +4,7 @@ tags: [JavaScript]
 categories: [Web前端]
 ---
 ## Factory
-工厂模式的目的是，创建对象，主要是防止`new`所带来的高耦合，《JavaScript Patterns》上就举了一个工厂的例子，似乎JavaScript中并没有分，简单工厂，工厂方法和抽象工厂这些，我在网上查了资料，抽象工厂好像也是有的，但是没有细看，书上的例子应该是简单工厂的，但和Java这些工厂模式，比较起来又不太一样，可能是基于原型和类继承的差别，这里先做笔记，回来再研究。简单工厂，是通过传入的参数不同，返回来同的对象，书上的例子正好是这样，传入不同种类的车，但是又不是写死在工厂中的，而是写在原型上，这样就有点像工厂方法模式。下面是创建代码：
+工厂模式的目的是，创建对象，主要是防止`new`所带来的高耦合，《JavaScript Patterns》上就举了一个工厂的例子，似乎JavaScript中并没有分，简单工厂，工厂方法和抽象工厂这些，我在网上查了资料，抽象工厂好像也是有的，但是没有细看，书上的例子应该是简单工厂的，但和Java这些工厂模式，比较起来又不太一样，可能是基于原型和类继承的差别，这里先做笔记，回来再研究。简单工厂，是通过传入的参数不同，返回不同的实例化对象，书上的例子正好是这样，传入不同种类的车，但又不是写死在工厂中的。下面是创建代码：
 ```javascript
 var corolla  = CarMaker.factory('Compact'); 
 var solstice = CarMaker.factory('Convertible'); 
@@ -13,6 +13,7 @@ corolla.drive();  // "Vroom, I have 4 doors"
 solstice.drive(); // "Vroom, I have 2 doors" 
 cherokee.drive(); // "Vroom, I have 17 doors
 ```
+<!--more-->
 实现代码：
 ```javascript
 // parent constructor 
@@ -97,7 +98,7 @@ sale.getPrice();                 // "RMB 105.00"
 现在就用数组的形式来实现，来分析下，decorate这个方法一定有一个数组，用来保存这个产品的税种数量，然后有一个`getPrice`方法，返回计算后的价格，各个税种都实现自己的getPrice方法，用来返回计算后的价格，那思路就有了。
 
  - 首先需要在销售中保存需要收的税种。
- - 分别实现各税种方法，提供统一方法调用`getPrice`，返回计算上这种税的价格。
+ - 分别实现各税种方法，提供统一方法调用getPrice，返回计算上这种税的价格。
  - sale中有一个总的getPrice方法，去调用此销售中所需要计算的所有税，返回总的价格。
 
 Sale构造器代码如下：
