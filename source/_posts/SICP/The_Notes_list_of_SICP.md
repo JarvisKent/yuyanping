@@ -7,7 +7,9 @@ date: 2016-01-02 19:58:07
  - Chapter 1. 抽象过程 (Building Abstractions with Procedures)
   - 1.1 [基本要素][chapter_1_The_Elements_of_Programming]
   - 1.2 [程序和计算过程][chapter_1_Procedures_and_the_Processes_They_Generate]
+  - 1.3 [高阶函数的公式化抽象][chapter_1_Formulating_Abstractions_with_Higher-Order_Procedures]
 
 
 [chapter_1_The_Elements_of_Programming]:http://www.yuyanping.com/SICP/chapter_1_The_Elements_of_Programming
 [chapter_1_Procedures_and_the_Processes_They_Generate]:http://www.yuyanping.com/SICP/chapter_1_Procedures_and_the_Processes_They_Generate/
+[chapter_1_Formulating_Abstractions_with_Higher-Order_Procedures]:http://www.yuyanping.com/SICP/chapter_1_Formulating_Abstractions_with_Higher-Order_Procedures/
