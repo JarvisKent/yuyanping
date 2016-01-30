@@ -194,5 +194,3 @@ Guess     Quotient      Average
  - **REPL** is short for read-eval-print loop,这其实是一个很好理解的概念，输入，计算，输出。这就是命令控制台一直在做的事。
  - **Scheme** dialect of Lisp
 
-下一篇笔记[Procedures and the Processes They Generate](http://www.yuyanping.com/SICP/chapter_1_Procedures_and_the_Processes_They_Generate),笔记[主目录](http://www.yuyanping.com/SICP/The_Notes_list_of_SICP/)
-[Chapter-1-1]: http://sarabander.github.io/sicp/html/1_002e1.xhtml#g_t1_002e1
