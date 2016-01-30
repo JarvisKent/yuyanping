@@ -23,15 +23,16 @@ categories: [Web前端]
 ![MUI_qq_group](http://7xoed1.com1.z0.glb.clouddn.com/2016/ionic_versus_MUI/MUI_qq_group.png "看来比较闲")
 ionic从我进群，就基本上在讨论实际问题，我也乐意给别人解答问题。
 ![ionic_qq_group](http://7xoed1.com1.z0.glb.clouddn.com/2016/ionic_versus_MUI/ionic_qq_group.png "问题多的回答不过来")
+当然以QQ讨论群来说明一些问题，有时候太片面，上面的群我选择都是最靠前的，截图也是随机的，只能作为一定参考。
 ## GitHub
 两个都是开源的框架，再上GitHub看看情况，首先来看看MUI，基本就是只有一个人在维护更新。
 ![MUI_GitHub_Contributors](http://7xoed1.com1.z0.glb.clouddn.com/2016/ionic_versus_MUI/MUI_GitHub_Contributors.png "后勤无保障")
 再来看看ionic，比MUI早一年的时间，但是无论star数量还是团队成员，都是无法比较的。
 ![ionic_GitHub_Contributors](http://7xoed1.com1.z0.glb.clouddn.com/2016/ionic_versus_MUI/ionic_GitHub_Contributors.png "团队的力量")
 ## 总结
-其实到这里，已经没必要再去比较这两个框架，个人感觉不是一个级别的，如果拿react和ionic进行比对，还是有的一拼的。本人知识水平，精力有限，暂时不再深入的进行分析，如果你是个人项目，可以使用MUI玩玩，公司的话，如果不是场景特别需要，还是不要选择MUI比较好，毕竟要考虑后期的维护成本。当初我们也考虑过，APIClould和AppCan，但是综合很多原因，还是选择了ionic。
+其实到这里，已经没必要再去比较这两个框架，个人感觉不是一个级别的，如果拿react和ionic进行对比，还是有的一拼的。本人知识水平，精力有限，暂时不再深入的进行分析（再深入就要变成吐槽了！），如果你是个人项目，可以使用MUI玩玩，公司的话，如果不是场景特别需要，还是不要选择MUI比较好，毕竟要考虑后期的维护成本。当初我们也考虑过，APIClould和AppCan，但是综合很多因素，还是选择了ionic。
 ### MUI
-MUI大概了解了下，跑了跑示例程序，没有实际进行开发，看了下代码，习惯了MVVM，传统的开发模式真的是让人头大，如果处理的不好，业务逻辑代码，组件逻辑代码，和表现层就会混在一起，形成高耦合的应用，以后的维护和升级那将会是噩梦。但是MUI的UI组件确实做的挺全，很适合一般公司进行快速开发，前提是业务逻辑不复杂，不然很容易出现一个文件上千行代码的情况。MUI上手比较简单，学习曲线平滑，不像ionic，你需要先弄懂Angular，不然就很难使用，Angular有很多概念，filter、directive、service、provider、factory等，有的并不好掌握和理解。
+MUI大概了解了下，跑了跑示例程序，没有实际进行开发，看了下代码，习惯了MVVM，传统的开发模式真的是让人头大，如果处理的不好，业务逻辑代码，组件逻辑代码，和表现层就会混在一起，形成高耦合的应用，以后的维护和升级那将会是噩梦。但是MUI的UI组件确实做的挺全，很适合一般公司进行快速开发，前提是业务逻辑不复杂，不然很容易出现一个文件上千行代码的情况。MUI也有她的优势，上手比较简单，学习曲线平滑，不像ionic，你需要先弄懂Angular，不然就很难使用，Angular有很多概念，filter、directive、service、provider、factory等，有的并不好掌握和理解。
 ### ionic
 ionic和angular太亲近，导致只要angular会遇到的问题，ionic肯定也会遇到，但是Angular具有的优势，比如说数据双向绑定，依赖注入，指令标签等，让ionic成为最有前途的Hybrid App框架。当然她也有不足，ionic的学习曲线很徒，但是会angular那就一定会ionic，如果公司使用Angular作为前端框架，那建议还是使用ionic作为Hybrid App解决方案。毕竟在GitHub上，ionic的项目介绍就有这么一句话：
 
