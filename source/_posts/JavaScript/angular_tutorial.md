@@ -39,6 +39,67 @@ $stateProvider.state('simple', {
 使用[$stateProvider](http://angular-ui.github.io/ui-router/site/#/api/ui.router.state.$stateProvider)对路由进行配置，第一个参数，代表**状态名称**，后面是配置参数。
 #### ui-router url参数传递
 很多时候，比如使用RESTful接口，需要根据URL参数，进行资源定位，这时候需要借用[$stateParams](http://angular-ui.github.io/ui-router/site/#/api/ui.router.state.$stateParams)模块，获取上一个页面传递的参数，当然也是可以直接在控制器里面设置，不过一般都是在view层进行的。更多资料参看[URL Parameters](https://github.com/angular-ui/ui-router/wiki/URL-Routing#url-parameters)
+#### @
+`viewname@statename`的格式，在ui-router中被用来表示绝对视图，符号前是视图，符号后是state名称，有绝对当然会有相对，来看如下代码段：
+```html
+<!-- index.html (root unnamed template) -->
+<body ng-app>
+<div ui-view></div> <!-- contacts.html plugs in here -->
+<div ui-view="status"></div>
+</body>
+
+<!-- contacts.html -->
+<h1>My Contacts</h1>
+<div ui-view></div>
+<div ui-view="detail"></div>
+
+<!-- contacts.detail.html -->
+<h1>Contacts Details</h1>
+<div ui-view="info"></div>
+```
+`module.js`
+```javascript
+$stateProvider
+  .state('contacts', {
+    // 可以看到这里没有设置views，那他会显示在父级未全名的view中。
+    templateUrl: 'contacts.html'   
+  })
+  .state('contacts.detail', {
+    views: {
+        
+        // 相对视图
+       
+        // 在views中设置相对视图，这个视图在父级中
+        // <div ui-view='detail'/>  contacts.html
+        "detail" : { },            
+
+        // 设置一个未命名的视力，相当于不设置
+        // <div ui-view/>  contacts.html
+        "" : { }, 
+
+        // 绝对视图
+
+        // <div ui-view='info'/>  contacts.detail.html
+        "info@contacts.detail" : { }
+
+        // 内容显示在`contacts`中的`detail`视图内
+        // <div ui-view='detail'/>  contacts.html
+        "detail@contacts" : { }
+
+        // 内容显示在`contacts`中的未命名的视图内
+        // <div ui-view/> within contacts.html
+        "@contacts" : { }
+
+        // state未命名，那就是 root，这里就是Index
+        // <div ui-view='status'/> index.html
+        "status@" : { }
+
+        // state和view都没命名，那就是root中的未命名视图
+        // <div ui-view/>  index.html
+        "@" : { } 
+  });
+```
+看完上面的代码，对相对视图和绝对视图应该会有一定的了解，使用`@`来指名在哪个视图显示，需要通过state名称和view名称来组成唯一的视图标识，这样就能进行绝对视图的定位显示。
 
 ### UI-Router 多路由嵌套
 通过路由嵌套来实现页面的部分更新，而不需要向服务器请求整个网页，提高用户体验，先来看一张ui-view的布局图![ui-router-nested](http://7xoed1.com1.z0.glb.clouddn.com/2016/Angular_tutorial/ui-router-nested.png "ui-view嵌套")
@@ -256,6 +317,11 @@ angular.module('filterExample', [])
   $scope.filteredText = $filter('uppercase')($scope.originalText);
 });
 ```
+### ngRepeat
+
+### ngOptions(select)
+
+[demo](http://codepen.io/HelloYu/pen/pjmmGN)
 ### 组件通信
 各组件有时候要共享信息，通常使用的方法有如下几种：
 
@@ -272,7 +338,7 @@ angular.module('filterExample', [])
 ### E2E Testing
 E2E(End-to-end)，多个组件联调测试，使用`Protractor`+`Mocha`。
 ## 模块化
-使用Angular进行大型的项目开发，如果没有进行模块化，无论是开发效率还是后期维护，成本太高。
+使用Angular进行大型的项目开发，如果没有进行模块化，无论是开发效率还是后期维护，成本都太高。
 ### 项目结构
 首先从一开始构建项目说起，我比较喜欢手动去创建项目结构，跟随自己的思路，将项目一点一点构建起来，下面推荐如下两种项目结构：
 ![NgStructure](http://7xoed1.com1.z0.glb.clouddn.com/2016/Angular_tutorial/NgStructure.jpg "项目组织结构")
