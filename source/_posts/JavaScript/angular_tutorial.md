@@ -99,7 +99,7 @@ $stateProvider
         "@" : { } 
   });
 ```
-看完上面的代码，对相对视图和绝对视图应该会有一定的了解，使用`@`来指名在哪个视图显示，需要通过state名称和view名称来组成唯一的视图标识，这样就能进行绝对视图的定位显示。
+看完上面的代码，对相对视图和绝对视图应该会有一定的了解，使用`@`来指明在哪个视图显示，需要通过state名称和view名称来组成唯一的视图标识，这样就能进行绝对视图的定位显示。
 
 ### UI-Router 多路由嵌套
 通过路由嵌套来实现页面的部分更新，而不需要向服务器请求整个网页，提高用户体验，先来看一张ui-view的布局图![ui-router-nested](http://7xoed1.com1.z0.glb.clouddn.com/2016/Angular_tutorial/ui-router-nested.png "ui-view嵌套")
@@ -318,6 +318,7 @@ angular.module('filterExample', [])
 });
 ```
 ### ngRepeat
+#### 注意$index
 
 ### ngOptions(select)
 
@@ -338,7 +339,14 @@ angular.module('filterExample', [])
 ### E2E Testing
 E2E(End-to-end)，多个组件联调测试，使用`Protractor`+`Mocha`。
 ## 模块化
-使用Angular进行大型的项目开发，如果没有进行模块化，无论是开发效率还是后期维护，成本都太高。
+使用Angular进行大型的项目开发，如果没有进行模块化，无论是开发效率还是后期维护，成本都太高。模块化主要从两方面进行：
+ 
+ - 视图组件模块化
+ - 逻辑模块化
+
+视图模块化主要通过`directive`指令，对代码进行封装，要尽量做到高内聚，低耦合。逻辑模块化主要遵循`职责单一`原则。
+## 规范化
+以下内容多数进行重新整理，参看《[前端组队“打怪”规范](/JavaScript/front_end_team_development_style)》
 ### 项目结构
 首先从一开始构建项目说起，我比较喜欢手动去创建项目结构，跟随自己的思路，将项目一点一点构建起来，下面推荐如下两种项目结构：
 ![NgStructure](http://7xoed1.com1.z0.glb.clouddn.com/2016/Angular_tutorial/NgStructure.jpg "项目组织结构")
@@ -370,7 +378,7 @@ function CustomerController() {
 
 
 ## 资料
- 
+ - [AngularJs开发第一次技术分享演讲](http://v.youku.com/v_show/id_XMTQ3OTgxMjc3Mg==.html) 有很多可以提高的地方。
  - [AngularUI-Router 演示文档](http://slides.com/helloyu/ui-router#/)
  - [AngularJS 学习资料大全](https://github.com/jmcunningham/AngularJS-Learning)
  - [AngularJS 学习书籍合集](http://pan.baidu.com/s/1kTXDOKf) 密码: 5tfg
