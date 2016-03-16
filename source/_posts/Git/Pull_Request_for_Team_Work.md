@@ -38,7 +38,9 @@ git push origin [branch_name]
 ### pull request
 这步的操作，需要在网站进行，登录TFS，找到自己参与的项目，可以看到大概如下图所示：
 ![Git_pull_request](http://7xoed1.com1.z0.glb.clouddn.com/2016/Git/Git_pull_request.jpeg "pull request")
-点击左边的`New pull request`，就会出现如上图所示界面，提交请求后，可以在左边查看请求状态，并跟进。
+点击左边的`New Pull Request`，就会出现如上图所示界面，提交请求后，点击左边相应功能，查看请求状态，并跟进。
+### 更新和合并
+上面说的是怎么发起pull request，当master有变化的时候，需要对master分支进行pull（省略fetch和merge,假设前提是不去改动master，所有操作都在branch进行），将更新后的master分支，merge到你现在工作的branch上。
 ## 注意
 
  * `branch`中的内容，如果没有commit到HEAD中，那会和其它分支共享，只有commit后，才会单独区分。
