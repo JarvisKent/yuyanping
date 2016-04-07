@@ -45,5 +45,5 @@ function WatchControllerAsCtrl() {
 ```javascript
 <div ng-controller="WatchControllerAsCtrl as hoho">
 ```
-在controller里面的监听表达式就是`hoho.data`，如果使用函数的形式，那直接使用controller里面的别名就行，这里推荐使用函数的形式，如果是字符串，angular会处理后将你的表达式用一层函数warp（包裹）。
+在controller里面的监听表达式就是`hoho.data`，如果使用函数的形式，那直接使用controller里面的别名就行，这里推荐使用函数的形式，如果是字符串，angular会处理后将你的表达式用一层函数wrap（包裹）。
 
