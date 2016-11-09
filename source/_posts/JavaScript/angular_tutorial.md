@@ -346,7 +346,7 @@ E2E(End-to-end)，多个组件联调测试，使用`Protractor`+`Mocha`。
 
 视图模块化主要通过`directive`指令，对代码进行封装，要尽量做到高内聚，低耦合。逻辑模块化主要遵循`职责单一`原则。
 ## 规范化
-以下内容多数进行重新整理，参看《[前端组队“打怪”规范](/JavaScript/front_end_team_development_style)》
+以下内容多数进行重新整理，参看《[前端组队“打怪”规范](/Front_End/front_end_team_development_style)》
 ### 项目结构
 首先从一开始构建项目说起，我比较喜欢手动去创建项目结构，跟随自己的思路，将项目一点一点构建起来，下面推荐如下两种项目结构：
 ![NgStructure](http://7xoed1.com1.z0.glb.clouddn.com/2016/Angular_tutorial/NgStructure.jpg "项目组织结构")
