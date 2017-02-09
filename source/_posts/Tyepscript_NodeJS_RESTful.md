@@ -1,7 +1,7 @@
 title: 使用TypeScript和NodeJS搭建RESTful API服务端
 date: 2017/02/04 12:00:00
 tags: [RESTful API,TypeScript,NodeJS]
-categories: [full stack]
+categories: [Full Stack]
 ---
 
 ## 参考资料

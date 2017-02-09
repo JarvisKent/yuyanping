@@ -125,15 +125,15 @@ Post users/:uid/subsidies
 
 #### 打开一栋楼下的某些设备
 ```
-post /buildings/:bid/meters/open?type=类型
+post /buildings/:bid/meters/open?meter_type=类型
 ```
 #### 关闭某类设备
 ```
-delete /buildings/:bid/meters/open?type=类型
+delete /buildings/:bid/meters/open?meter_type=类型
 ```
 #### 查询某类设备物理状态：开或关
 ```
-get /buildings/:bid/meters/open?type=类型
+get /buildings/:bid/meters/open?meter_type=类型
 ```
 #### 单独打开某个设备
 ```

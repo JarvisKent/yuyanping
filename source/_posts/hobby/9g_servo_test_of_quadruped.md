@@ -46,7 +46,7 @@ error: espcomm_upload_mem failed
 ```
 可以将ESP的电源断开，再连接，之后马上进行Upload操作。
 
-**注意**：这里遇到一个问题，就是官方的Adafruit_PWMServoDriver库，在ESP8266下使用有点问题，我是编译的时候无法通过，找不到`Wire1`,所以我就自己把源文件作了一些简单修改，具体原因没有深究。修改`Adafruit_PWMServoDriver.cpp`文件内代码，参考如下：
+**注意**：这里遇到一个问题，就是官方的Adafruit_PWMServoDriver库，在ESP8266下使用有点问题，我是编译的时候无法通过，找不到`Wire1`,所以我就自己把源文件作了一些简单修改，具体原因没有深究（`ARDUINO_SAM_DUE`暂没找到相关资料）。修改`Adafruit_PWMServoDriver.cpp`文件内代码，参考如下：
 ```
 修改前
 #if defined(ARDUINO_SAM_DUE)
@@ -57,9 +57,7 @@ error: espcomm_upload_mem failed
 修改后
 #define WIRE Wire
 ```
-
 到这已经能够使用ESP与PCA9685来控制舵机。
-
 
 ### ESP8266 WebSocket 通信测试
 将ESP设置成[SAP][ESP8266 Soft Access Point](Soft Access Point)模式，让手机去连接ESP所开启的WebSocket服务，并简单的向ESP发送0-180(220-520)的数值，这里的传输格式选用JSON，方便后期扩展。
